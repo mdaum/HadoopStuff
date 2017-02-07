@@ -1,0 +1,14 @@
+ Job Counters
+                Killed map tasks=2
+                Launched map tasks=55
+                Launched reduce tasks=10
+                Data-local map tasks=46
+                Rack-local map tasks=9
+                Total time spent by all maps in occupied slots (ms)=5981742
+                Total time spent by all reduces in occupied slots (ms)=6117308
+                Total time spent by all map tasks (ms)=2990871
+                Total time spent by all reduce tasks (ms)=1529327
+                Total vcore-milliseconds taken by all map tasks=2990871
+                Total vcore-milliseconds taken by all reduce tasks=1529327
+                Total megabyte-milliseconds taken by all map tasks=12250607616
+                Total megabyte-milliseconds taken by all reduce tasks=1252824
