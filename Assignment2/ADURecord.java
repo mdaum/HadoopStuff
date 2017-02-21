@@ -9,6 +9,11 @@ public class ADURecord implements Writable{
 	private LongWritable Sent;
 	private LongWritable Recieved;
 	
+	public ADURecord(){
+		this.ipAddr=new Text();
+		this.Sent=new LongWritable();
+		this.Recieved = new LongWritable();
+	}
 	public ADURecord(Text ip,LongWritable sent, LongWritable rec){
 		this.ipAddr=ip;
 		this.Sent=sent;
