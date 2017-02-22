@@ -15,8 +15,8 @@ public class IpStatsReducer
       Context context)
       throws IOException, InterruptedException {
 
-      int sent=0;
-	  int rec=0;
+      long sent=0;
+	  long rec=0;
       // iterate through all the records...adding it to sent and receive...output new ADURecord which is writeable
       for (ADURecord value : values) {
           sent+=value.getSent().get();

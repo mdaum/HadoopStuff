@@ -22,9 +22,9 @@ public class ADURecord implements Writable{
 	
 	@Override
 	public void readFields(DataInput in)throws IOException{
-		ipAddr.readFields(in);
+		//ipAddr.readFields(in); //do the reads need to match up to the writes?
 		Sent.readFields(in);
-		Recieved.readFields(in);
+		Recieved.readFields(in); //kept getting an EOFException here! Was due to 2 lines up..you must match what you write
 	}
 	
 	@Override
@@ -41,5 +41,9 @@ public class ADURecord implements Writable{
 	}
 	public LongWritable getRecieved(){
 		return Recieved;
+	}
+	@Override
+	public String toString(){
+		return ""+Sent.get()+"\t"+Recieved.get();
 	}
 }
