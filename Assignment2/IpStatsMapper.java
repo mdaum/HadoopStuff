@@ -21,7 +21,7 @@ public class IpStatsMapper
     String IPaddr2 = new String();
 	String direction = tokens[3]; //capture direciton
     int last_dot;
-	LongWritable bytes = new LongWritable(Integer.parseInt(tokens[5])); //capture size of data
+	LongWritable bytes = new LongWritable(Long.parseLong(tokens[5])); //capture size of data
 	// get the two IP address.port fields
         IPaddr1 = tokens[2];
 	IPaddr2 = tokens[4];

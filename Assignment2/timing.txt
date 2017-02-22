@@ -1,0 +1,2 @@
+Num Reducers: 10 20,30
+Time (seconds): 243,216,182
