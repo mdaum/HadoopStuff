@@ -25,7 +25,7 @@ public class OverwatchStatsMapper
 		top =(JSONObject)j.parse(line);
 	}
 	catch(ParseException e){
-		return//i.e skip line
+		return;//i.e skip line
 	}
 	ArrayList<JSONObject> regions = new ArrayList<JSONObject>();
 	regions.add ((JSONObject)top.get("any"));//grab each region...guess the any region is else?
@@ -44,7 +44,7 @@ public class OverwatchStatsMapper
 	}
   }
   
-  public String Sanitize(String line){
+  public static String Sanitize(String line){
 		line=line.replaceAll("u'", "\"");//lots of sanitizing
 		line=line.replaceAll("'", "\"");
 		line=line.replaceAll("None", "null");
